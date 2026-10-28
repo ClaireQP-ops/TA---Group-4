@@ -1,107 +1,159 @@
-/* Basic design for my school project website */
+/* ========================================
+   TA GROUP 4 - WEBSITE STYLES
+   ======================================== */
+
+/* 1. Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #263238;
     margin: 0;
-    padding: 40px 20px;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.7;
+    color: #263445;
+    background-color: #F3F6FB;
 }
 
-h1 {
-    color: #174ea6;
-    text-align: center;
-    font-size: 36px;
-}
-
-h2 {
-    color: #174ea6;
-    border-bottom: 2px solid #d5e3f5;
-    padding-bottom: 8px;
-}
-
-p, ul {
-    font-size: 17px;
-}
-
-body > h1,
-body > p,
-body > h2,
-body > ul {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-ul {
-    .navbar {
-    background-color: #17365D;
-    color: white;
+/* 2. Navigation menu */
+.navbar {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 35px auto;
     padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    background-color: #17365D;
+    color: #FFFFFF;
     border-radius: 12px;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 12px rgba(23, 54, 93, 0.18);
 }
 
-.logo {
+.navbar .logo {
+    color: #FFFFFF;
     font-size: 22px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
-.nav-links {
+.navbar .nav-links {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 24px;
 }
 
-.nav-links a {
-    color: white;
+.navbar .nav-links a {
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.navbar .nav-links a:hover {
     color: #B8D5FF;
 }
+
+/* 3. Main content sections */
+section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2EAF4;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(23, 54, 93, 0.06);
+    scroll-margin-top: 20px;
+}
+
+/* 4. Welcome section */
+#home {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    background: linear-gradient(135deg, #FFFFFF, #EAF2FF);
+}
+
+#home h1 {
+    margin-top: 0;
+    color: #17365D;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+/* 5. Section headings */
+section h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    color: #245A91;
+    font-size: 27px;
+    border-bottom: 2px solid #D6E5FA;
+}
+
+/* 6. Paragraphs */
+section p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #465568;
+}
+
+/* 7. Footer */
+footer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    padding: 15px;
+    color: #68778A;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 8. Mobile-friendly design */
+@media (max-width: 600px) {
+    body {
+        padding: 18px 12px;
+    }
+
     .navbar {
         flex-direction: column;
+        padding: 20px 15px;
         gap: 15px;
-        padding: 20px;
     }
 
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
+    .navbar .nav-links {
         justify-content: center;
-    }
-
-    h1 {
-        font-size: 28px;
+        flex-wrap: wrap;
+        gap: 18px;
     }
 
     section {
-        padding: 22px;
+        padding: 24px 20px;
+        margin-bottom: 18px;
     }
-}nav.navbar .logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
 
-nav.navbar .nav-links {
-    display: flex;
-    gap: 20px;
-}
+    #home {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
 
-nav.navbar .nav-links a {
-    color: white !important;
-    text-decoration: none !important;
-    font-weight: bold;
-}
+    #home h1 {
+        font-size: 29px;
+    }
 
-nav.navbar .nav-links a:hover {
-    color: #B8D5FF !important;
+    section h2 {
+        font-size: 23px;
+    }
 }
