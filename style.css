@@ -157,3 +157,30 @@ footer p {
         font-size: 23px;
     }
 }
+/* FIX: Make content cards visible */
+body > section,
+body section {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE6F2;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(23, 54, 93, 0.10);
+}
+
+/* Keep the welcome card attractive */
+body section#home {
+    background: linear-gradient(135deg, #FFFFFF, #EAF2FF);
+    text-align: center;
+}
+
+/* Improve card spacing on phones */
+@media (max-width: 600px) {
+    body > section,
+    body section {
+        padding: 24px 20px;
+    }
+}
