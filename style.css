@@ -66,3 +66,23 @@ ul {
 .nav-links a:hover {
     color: #B8D5FF;
 }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
