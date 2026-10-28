@@ -1,0 +1,41 @@
+/* Basic design for my school project website */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.7;
+}
+
+h1 {
+    color: #174ea6;
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    color: #174ea6;
+    border-bottom: 2px solid #d5e3f5;
+    padding-bottom: 8px;
+}
+
+p, ul {
+    font-size: 17px;
+}
+
+body > h1,
+body > p,
+body > h2,
+body > ul {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    background-color: white;
+    padding: 24px 24px 24px 45px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
