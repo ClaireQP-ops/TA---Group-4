@@ -85,4 +85,23 @@ ul {
     section {
         padding: 22px;
     }
+}nav.navbar .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav.navbar .nav-links a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+nav.navbar .nav-links a:hover {
+    color: #B8D5FF !important;
 }
