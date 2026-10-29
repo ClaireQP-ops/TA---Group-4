@@ -222,3 +222,50 @@ section p {
     margin-left: auto;
     margin-right: auto;
 }
+/* Tools Section */
+#tools {
+    text-align: center;
+}
+
+.section-description {
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.tool-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 28px 20px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.tool-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.tool-card h3 {
+    color: #0f172a;
+    font-size: 1.05rem;
+    margin: 0;
+}
