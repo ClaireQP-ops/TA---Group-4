@@ -184,3 +184,19 @@ body section#home {
         padding: 24px 20px;
     }
 }
+/* Welcome section button */
+.project-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 24px;
+    background-color: #17365D;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.project-button:hover {
+    background-color: #245A91;
+}
