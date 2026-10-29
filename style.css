@@ -200,3 +200,25 @@ body section#home {
 .project-button:hover {
     background-color: #245A91;
 }
+
+/* Subtle hover effect on content cards */
+section {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 22px rgba(23, 54, 93, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Keep the welcome heading centered */
+#home h1 {
+    margin-bottom: 15px;
+}
+
+/* Give paragraphs a comfortable reading width */
+section p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
